@@ -3,14 +3,14 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: gcc.exe build active file",
-			"command": "C:/mingw64/bin/gcc.exe",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:/mingw64/bin/g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"-Wall",
-				"-std=c23",
-				"${fileDirname}\\*.c",
+				"-std=c++23",
+				"${fileDirname}\\*.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
@@ -22,7 +22,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: C:/mingw64/bin/gcc.exe"
+			"detail": "compiler: C:/mingw64/bin/g++.exe"
 		}
 	]
 }
